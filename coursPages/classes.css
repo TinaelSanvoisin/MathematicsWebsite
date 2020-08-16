@@ -1,0 +1,429 @@
+/* GENERAL */
+
+*
+{
+	margin:0;
+	padding:0;
+}
+
+
+body
+{
+    background-color: white;
+}
+
+.containerNoPadding
+{
+    padding : 0;
+}
+
+ul ,li
+{
+    list-style: none;
+}
+
+/* SIDEBAR VUE ORDI*/
+
+.menu
+{
+    width : 230px;
+    position :fixed;
+    float: left;
+    z-index: 1;
+}
+
+.vuePortable
+{
+    display: none;
+}
+
+.menu .imgHeader
+{
+    width: inherit;
+    height: auto;
+}
+
+.menu .imgHeader img
+{
+    width : 100%;
+    min-width: 230px;
+    height: 125px;
+}
+
+.navbar
+{
+    background-color: rgb(50,50,50);
+    height: calc(100vh - 125px);
+    padding : 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-width:230px;
+}
+
+.navbar-nav
+{
+    min-width: 230px;
+    
+}
+
+.nav-item
+{
+    width: 230px;
+    border-bottom: 1px solid white;
+    height: 70px;
+    text-align: left;
+}
+
+
+.nav-item .nav-link{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 24px 30px;
+    height: 70px;
+    outline: 0;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.nav-item .nav-link img
+{
+    height : 30px;
+    width : 30px;
+    margin-right: 20px;
+    margin-top: 5px;
+    vertical-align: middle;
+    float: left;
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255, 0.9);
+}
+
+.nav-item .nav-link:hover
+{
+    background-color: rgb(25,25,25);
+}
+
+/* SIDEBAR VUE PORTABLE*/
+
+.vuePortable .navbar-toggler
+{
+    margin : 10px 10px;
+}
+
+.vuePortable .navbar-brand img
+{
+    height: calc(100% - 10px);
+    width : 100px;
+    margin-left: 10px;
+}
+
+
+/* Descritpion */
+.title
+{
+    height: 125px;
+    margin-left: 230px;
+    width: calc(100% - 230px);  
+    vertical-align: middle;
+    background-color: rgb(220,220,220);
+    min-width: 500px;
+    text-align: center;
+    max-width: 2000px;
+}
+
+.title h1
+{
+    height: 125px;
+    padding: 32.5px 0;   
+    margin-bottom: 0px;
+    font-size : 34px;
+    min-width: 355px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+#presentation
+{
+    width: 25%;
+    float: right;
+    text-align: center;
+}
+
+#contenuPresentation
+{
+    background-color: rgb(200,200,200);
+    text-align: justify;
+    padding : 20px 15px 0px 15px;
+    min-width: 150px;
+}
+
+#contenuPresentation h3
+{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Helvetica;
+    text-transform: uppercase;
+}
+
+#contenuPresentation iframe
+{
+    width : 100%;
+    height: 100%;
+    margin-bottom: 25px;
+}
+
+#presentation img
+{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#recommandation::before
+{
+    content: "";
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url("../fondMaths.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#recommandation
+{
+    display: inline-block;
+    width : calc(100% - 230px);
+    margin:0px auto -7px 230px;
+    max-width: 2000px;
+}
+
+/* CHAPITRES */
+
+
+.chapitres
+{
+    margin: 50px 0 0 0;
+    float: left;
+    width: 75%;
+}
+
+.chapitres h1
+{
+    margin-bottom : 50px;
+    font-family: Arial;
+    text-transform : uppercase;
+    font-size : 30px;
+    font-weight: bold;
+    color : black;
+    text-align: center;
+}
+
+.boutonMenuDeroulant4
+{
+    border : none;
+    font-weight: bold;
+    padding: 0;
+    background-color: rgba(255,255,255,0);
+}
+
+.boutonMenuDeroulant4 img
+{
+    width: 18px;
+    height: 18px;
+    padding : 1px;
+    margin-top: 0px;
+    margin-left:5px;
+    vertical-align : middle;
+}
+
+.boutonMenuDeroulant4:focus
+{
+    outline: none;
+    border :none;
+}
+
+.texteChapitre
+{
+    font-weight: bold;
+    min-width: 200px;
+    text-align: center;
+}
+
+.chapitres ul ul div
+{
+    min-width: 200px;
+}
+
+.chapitres ul ul div li
+{
+    margin-left: 45%;
+    margin-right: 10px;
+    height: 50px;
+}
+
+.chapitres ul ul div li a
+{
+    color : rgb(22, 207, 83);
+}
+
+.decalage
+{
+    margin-top: 20px;
+}
+
+#divacacher1, #divacacher2, #divacacher3, #divacacher4, #divacacher5, #divacacher6, #divacacher7, #divacacher8, #divacacher9,
+#divacacher10, #divacacher11, #divacacher12, #divacacher13, #divacacher14, #divacacher15, #divacacher16, #divacacher17, 
+#divacacher18, #divacacher19, #divacacher20, #divacacher21, #divacacher22, #divacacher23, #divacacher24
+{
+    max-height : 0px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.chapitres li a
+{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.chapitres ul ul div li img
+{
+    width : 20px;
+    height: auto;
+    margin-right: 7px;
+    vertical-align: baseline;
+}
+
+
+@media (max-width:850px)
+{
+    #presentation
+    {
+        float: left;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .chapitres
+    {
+        width: 100%;
+    }
+
+    .title h1
+    {
+        font-size: 24px;
+    }
+
+    #recommandation
+    {
+        min-width: 502px;
+    }
+}
+
+@media (max-width:730px)
+{
+
+    .menu
+    {
+        width : 100vw;
+        position: inherit;
+        float: none;
+    }    
+
+    #recommandation
+    {
+        width : 100vw;
+        margin-left: 0px;
+        margin-right: 0px;
+        min-width: 230px;
+    }
+
+    .title
+    {
+        width : 100vw;
+        margin-left: 0px;
+        margin-right: 0px;
+        min-width: 230px;
+    }
+
+    .title h1
+    {
+        min-width: 230px;
+    }
+
+    .chapitres
+    {
+        min-width: 230px;
+    }
+
+    .navbar
+    {
+        height: auto;
+    }
+
+    .navbar-nav
+    {
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item
+    {
+        width: 100%;
+    }
+
+
+    #presentation img
+    {
+        width:60%;
+        height: auto;
+    }
+
+    .vueOrdi
+    {
+        display: none;
+    }
+
+    .vuePortable
+    {
+        display: block !important;
+    }
+
+    #contenuPresentation
+    {
+        width : 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:550px)
+{
+    .title h1
+    {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:2500px)
+{
+    .menu .navbar-nav
+    {
+        position: fixed;
+        top:125px;
+    }
+}
